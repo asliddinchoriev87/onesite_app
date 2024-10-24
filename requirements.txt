@@ -1,4 +1,6 @@
 streamlit
+newspaper3k
 scikit-learn
+pandas
+numpy
 transformers
-newspaper
