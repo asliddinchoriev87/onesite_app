@@ -11,6 +11,12 @@ with open('nmf_model.pkl', 'rb') as model_file:
 with open('tfidf_vectorizer.pkl', 'rb') as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
+# Make sure the SummarizationModel class is defined or imported
+class SummarizationModel:
+    def __init__(self, model_name):
+        self.model_name = model_name
+
+# Now load the pickled model
 with open('summarization_model.pkl', 'rb') as sum_file:
     summarization_model = pickle.load(sum_file)
 
